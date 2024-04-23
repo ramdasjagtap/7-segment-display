@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Segment7_display.srcs/sources_1/new/counter.v" \
+"../../../../Segment7_display.srcs/sources_1/new/decoder.v" \
+"../../../../Segment7_display.srcs/sources_1/new/freq_divider.v" \
+"../../../../Segment7_display.srcs/sources_1/new/mux_2x1_4bit.v" \
+"../../../../Segment7_display.srcs/sources_1/new/segment.v" \
+"../../../../Segment7_display.srcs/sources_1/new/top_module.v" \
+"../../../../Segment7_display.srcs/sim_1/new/tb_test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
